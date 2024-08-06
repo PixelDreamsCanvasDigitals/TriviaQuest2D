@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b5e2bbcd274486c40aca50aa47fdb64b
+  - enabled: 1
+    path: Assets/Scenes/Sports.unity
+    guid: 482927d0dd288e9488767aa8a10388e3
+  - enabled: 1
+    path: Assets/Scenes/Science.unity
+    guid: 4e17772468805a44e96cf1d842076298
+  - enabled: 1
+    path: Assets/Scenes/Food.unity
+    guid: 76397226f16d5b348b05d6c4717bc870
+  - enabled: 1
+    path: Assets/Scenes/Animals.unity
+    guid: cce23885a06c74942acd305d4e8b96eb
+  - enabled: 1
+    path: Assets/Scenes/Maths.unity
+    guid: 5e1e263657891f140999a9e8f221ea35
+  - enabled: 0
+    path: Assets/Scenes/Tutorial.unity
+    guid: f70f39f90673b074699fe1d517af9087
+  m_configObjects: {}
