@@ -327,16 +327,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: {fileID: 1380100895}
   questions:
-  - {fileID: 11400000, guid: 25f4dcaa19897d044bcf2f9c6433cc44, type: 2}
-  - {fileID: 11400000, guid: b40e149b88782aa41911332f883755d9, type: 2}
-  - {fileID: 11400000, guid: 9091bb655d458cb46912325f5adc93f9, type: 2}
-  - {fileID: 11400000, guid: fffd1a2f737c345409a7d0301ee754a8, type: 2}
-  - {fileID: 11400000, guid: 9b063eb5fa850554997b1dd5bfb11694, type: 2}
-  - {fileID: 11400000, guid: 30913e20f18848c4786cf18c9a372d0a, type: 2}
-  - {fileID: 11400000, guid: a0d3c872bd7dd9f40af9f0c2b31f0348, type: 2}
-  - {fileID: 11400000, guid: 0346e9c4ec3e2a64a865f8ac5ba1b4d1, type: 2}
-  - {fileID: 11400000, guid: 003dfe7848f74bf4db436ef0bfe38e6c, type: 2}
-  - {fileID: 11400000, guid: 4c0d9dfee44d47e41ac620949810ae6b, type: 2}
+  - {fileID: 11400000, guid: 4515864a8f4b90f4ca7b550ceda18952, type: 2}
+  - {fileID: 11400000, guid: 76e07bfe383650044959a74758f1b44f, type: 2}
+  - {fileID: 11400000, guid: 286a20cda1fc74b43aedc7df40267d9d, type: 2}
+  - {fileID: 11400000, guid: 2a6fe104ec9d6aa45a5df03ae8263a46, type: 2}
+  - {fileID: 11400000, guid: 78d7471130f49f046b1e7f7262461908, type: 2}
+  - {fileID: 11400000, guid: 14a0c2b0d49ddbf47af1053c7b553353, type: 2}
+  - {fileID: 11400000, guid: d108283bdf893fa4dbba85dd83d02d45, type: 2}
+  - {fileID: 11400000, guid: 1ddb4e53d1ea077478461eeb66b2378f, type: 2}
+  - {fileID: 11400000, guid: 2a65221750cbecd409a3022b8c720b32, type: 2}
+  - {fileID: 11400000, guid: dd54c9b00ce6ecc4f8c4cdabc7486b78, type: 2}
   answerButtons:
   - {fileID: 1121799204}
   - {fileID: 682310057}
@@ -3296,6 +3296,10 @@ PrefabInstance:
     - target: {fileID: 7965344795991950474, guid: c425b3018fce10443a32970c1132c1c3, type: 3}
       propertyPath: m_Name
       value: PausePanelNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965344795991950474, guid: c425b3018fce10443a32970c1132c1c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7965344796850472024, guid: c425b3018fce10443a32970c1132c1c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

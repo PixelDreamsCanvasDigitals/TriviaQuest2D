@@ -66,10 +66,14 @@ namespace DailyRewardSystem {
 
 			StopAllCoroutines ( );
 			StartCoroutine ( CheckForRewards ( ) );
+
+			//new line
+			noMoreRewardsPanel.SetActive ( false );
 		}
 
 		void Initialize ( ) {
 			nextRewardIndex = PlayerPrefs.GetInt ( "Next_Reward_Index", 0 );
+
 
 			//Update Mainmenu UI (metals,coins,gems)
 			UpdateMetalsTextUI ( );
@@ -78,7 +82,7 @@ namespace DailyRewardSystem {
 
 			//Add Click Events
 			openButton.onClick.RemoveAllListeners ( );
-			openButton.onClick.AddListener ( OnOpenButtonClick );
+			openButton.onClick.AddListener ( OnOpenButtonClick );	
 
 			closeButton.onClick.RemoveAllListeners ( );
 			closeButton.onClick.AddListener ( OnCloseButtonClick );
@@ -89,6 +93,7 @@ namespace DailyRewardSystem {
 			//Check if the game is opened for the first time then set Reward_Claim_Datetime to the current datetime
 			if ( string.IsNullOrEmpty ( PlayerPrefs.GetString ( "Reward_Claim_Datetime" ) ) )
 				PlayerPrefs.SetString ( "Reward_Claim_Datetime", DateTime.Now.ToString ( ) );
+
 		}
 
 		IEnumerator CheckForRewards ( ) {
@@ -139,7 +144,7 @@ namespace DailyRewardSystem {
 			rewardsNotification.SetActive ( false );
 		}
 
-		void OnClaimButtonClick ( ) {
+		public void OnClaimButtonClick ( ) {
 			Reward reward = rewardsDB.GetReward ( nextRewardIndex );
 
 			//check reward type
@@ -191,11 +196,11 @@ namespace DailyRewardSystem {
 		}
 
 		//Open | Close UI -------------------------------------------------------
-		void OnOpenButtonClick ( ) {
+		public void OnOpenButtonClick ( ) {
 			rewardsCanvas.SetActive ( true );
 		}
 
-		void OnCloseButtonClick ( ) {
+		public void OnCloseButtonClick ( ) {
 			rewardsCanvas.SetActive ( false );
 		}
 	}

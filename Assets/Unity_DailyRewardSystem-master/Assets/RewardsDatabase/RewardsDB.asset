@@ -15,21 +15,19 @@ MonoBehaviour:
   rewards:
   - Type: 0
     Amount: 100
-  - Type: 0
-    Amount: 50
   - Type: 1
-    Amount: 30
-  - Type: 0
-    Amount: 40
-  - Type: 2
     Amount: 60
-  - Type: 1
-    Amount: 70
   - Type: 2
-    Amount: 25
-  - Type: 1
-    Amount: 35
-  - Type: 1
-    Amount: 45
+    Amount: 10
   - Type: 0
-    Amount: 0
+    Amount: 200
+  - Type: 1
+    Amount: 100
+  - Type: 2
+    Amount: 20
+  - Type: 0
+    Amount: 320
+  - Type: 1
+    Amount: 200
+  - Type: 2
+    Amount: 35

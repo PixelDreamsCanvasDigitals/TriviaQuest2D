@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Food.unity
     guid: 76397226f16d5b348b05d6c4717bc870
   - enabled: 1
-    path: Assets/Scenes/Animals.unity
+    path: Assets/Scenes/Final Scenes/Animals.unity
     guid: cce23885a06c74942acd305d4e8b96eb
   - enabled: 1
     path: Assets/Scenes/Maths.unity
