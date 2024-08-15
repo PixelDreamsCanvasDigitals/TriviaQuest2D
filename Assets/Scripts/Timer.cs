@@ -60,7 +60,7 @@ public class Timer : MonoBehaviour
             if(timerValue > 0)
             {
 
-                fillFraction = timerValue / timeToCompleteQuestion; 
+                fillFraction = timerValue / timeToCompleteQuestion;
             }
             else
             {

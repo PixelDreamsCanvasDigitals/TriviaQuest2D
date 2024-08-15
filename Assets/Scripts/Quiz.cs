@@ -62,6 +62,13 @@ public class Quiz : MonoBehaviour
 
     public int questionIndex;
 
+    //new 
+    private int health = 3;
+    public GameObject lifeHeart1;
+    public GameObject lifeHeart2;
+    public GameObject lifeHeart3;
+
+
     private void Start()
     {
 
@@ -132,6 +139,20 @@ public class Quiz : MonoBehaviour
         }
 
         linkSO.mainMenuProgressValue = progressBar.value;
+
+        //life function
+        if(health == 2)
+        {
+            lifeHeart1.SetActive(false);
+        }
+        else if(health == 1)
+        {
+            lifeHeart2.SetActive(false);
+        }
+        else if(health == 0)
+        {
+            lifeHeart3.SetActive(false);
+        }
     }
 
     public void OnAnswerSelected(int index)
@@ -181,6 +202,9 @@ public class Quiz : MonoBehaviour
             string correctAnswer = currentQuestion.GetAnswer(correctAnswerIndex);
             questionText.text = "Sorry, the correct answer was;\n " + correctAnswer;
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
+
+            //new function
+            health = health - 1;
 
         }
         progressBar.value++;
